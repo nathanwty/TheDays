@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="Article" syncable="YES"/>
-    <entity name="Diray" syncable="YES">
+    <entity name="DiaryEntry" representedClassName="DirayEntry" syncable="YES">
         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="futureDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -11,14 +10,7 @@
         <attribute name="weather" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="weatherImageData" optional="YES" attributeType="Binary" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
-        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="passWord" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
-    </entity>
     <elements>
-        <element name="Article" positionX="-27" positionY="81" width="128" height="45"/>
-        <element name="Diray" positionX="-162" positionY="216" width="128" height="163"/>
-        <element name="User" positionX="-216" positionY="12" width="128" height="88"/>
+        <element name="DiaryEntry" positionX="-162" positionY="216" width="128" height="163"/>
     </elements>
 </model>

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DiaryEntry.h"
 
 @interface TextEditViewController : UIViewController
+
+@property (nonatomic, strong) DiaryEntry *entry;
+
+
 
 @end
