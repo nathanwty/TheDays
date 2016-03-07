@@ -11,14 +11,10 @@
 #import "DiaryCoreDataStack.h"
 
 @interface TextEditViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIActionSheetDelegate>
-
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-@property (weak, nonatomic) IBOutlet UIButton *imagePikerButton;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet UIButton *badButton;
-@property (weak, nonatomic) IBOutlet UIButton *averagebutton;
-@property (weak, nonatomic) IBOutlet UIButton *goodButton;
-@property (strong, nonatomic) IBOutlet UIView *accesoryview;
+@property (weak, nonatomic) IBOutlet UIButton *imagePikerButton;
+
 @property (nonatomic, strong) UIImage *pickedImage;
 
 @end
@@ -55,8 +51,8 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"EEEE MMMM d, yyyy"];
     self.dateLabel.text = [dateFormatter stringFromDate:date];
-    self.textView.inputAccessoryView = self.accesoryview;
-    
+
+
     self.imagePikerButton.layer.cornerRadius = CGRectGetWidth(self.imagePikerButton.frame) / 2.0f;
     
 

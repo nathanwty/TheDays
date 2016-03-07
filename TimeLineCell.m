@@ -12,10 +12,13 @@
 @interface TimeLineCell()
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *loactionLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *moodImageview;
+
+@property (weak, nonatomic) IBOutlet UIImageView *linePart;
+
 
 @end
 
@@ -43,15 +46,9 @@
     
     self.dateLabel.text = [dateFormatter stringFromDate:date];
     
-    if (entry.imageData) {
-        self.mainImageView.image = [UIImage imageWithData:entry.imageData];
-    } else {
-        self.mainImageView.image = [UIImage imageNamed:@"icn_noimage"];
-    }
-    
 
-    
-    self.mainImageView.layer.cornerRadius = CGRectGetWidth(self.mainImageView.frame) / 2.0f;
+
+
     
     if (entry.location.length > 0) {
         self.loactionLabel.text = entry.location;

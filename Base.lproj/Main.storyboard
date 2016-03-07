@@ -45,7 +45,7 @@
                                     <rect key="frame" x="20" y="108" width="48" height="48"/>
                                 </variation>
                                 <connections>
-                                    <action selector="imageSelectionButtonWasPressed:" destination="5Qv-UN-u69" eventType="touchUpInside" id="rQe-T7-pkg"/>
+                                    <action selector="imageSelectionButtonWasPressed:" destination="5Qv-UN-u69" eventType="touchUpInside" id="caw-wt-nwd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,18 +66,26 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="RDc-c0-8Mm">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Zyg-eJ-kcl"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Sxs-zM-ibQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Zyg-eJ-kcl">
+                            <connections>
+                                <action selector="cancelWasPressed:" destination="5Qv-UN-u69" id="18y-lv-koa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="Sxs-zM-ibQ">
+                            <connections>
+                                <action selector="doneWasPressed:" destination="5Qv-UN-u69" id="cRg-0o-aAv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="dateLabel" destination="EpM-mV-eus" id="eTu-OF-4Iz"/>
-                        <outlet property="imagePikerButton" destination="XmN-VX-T7b" id="L5Q-rK-f1o"/>
-                        <outlet property="textView" destination="YJW-N7-Ytm" id="ag9-Wq-w4u"/>
+                        <outlet property="dateLabel" destination="EpM-mV-eus" id="fd2-Ex-IBp"/>
+                        <outlet property="imagePikerButton" destination="XmN-VX-T7b" id="mGS-XW-rWx"/>
+                        <outlet property="textView" destination="YJW-N7-Ytm" id="SRK-1V-fDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nR0-Qq-ZBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2875.5" y="-671"/>
+            <point key="canvasLocation" x="2782.5" y="60"/>
         </scene>
         <!--Recommend Page View Controller-->
         <scene sceneID="UyE-Aj-MLJ">
@@ -203,8 +211,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hYg-em-tjQ" kind="relationship" relationship="viewControllers" id="iCx-j0-gOy"/>
                         <segue destination="CPD-kL-Mln" kind="relationship" relationship="viewControllers" id="z4L-G3-ltv"/>
+                        <segue destination="hYg-em-tjQ" kind="relationship" relationship="viewControllers" id="iCx-j0-gOy"/>
                         <segue destination="zkw-oK-2Q9" kind="relationship" relationship="viewControllers" id="vHd-Pv-vuT"/>
                         <segue destination="vBM-B6-5Jj" kind="relationship" relationship="viewControllers" id="GwJ-M1-JbC"/>
                     </connections>
@@ -219,6 +227,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hYg-em-tjQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="typehere" image="pencil" id="KrW-hb-oAd"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="SCs-PB-1Um"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwC-lc-pEx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -233,7 +242,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8Y-T6-joJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.5" y="-671"/>
+            <point key="canvasLocation" x="1957.5" y="60"/>
         </scene>
         <!--timeline-->
         <scene sceneID="eSD-BN-8MZ">
@@ -247,97 +256,47 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="eBn-aY-gdV" kind="relationship" relationship="rootViewController" id="4s1-4G-Ndk"/>
+                        <segue destination="LSS-TZ-iz3" kind="relationship" relationship="rootViewController" id="qRc-2V-xI9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10Z-0h-HnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.5" y="60"/>
+            <point key="canvasLocation" x="1957.5" y="-671"/>
         </scene>
         <!--List Table View Controller-->
-        <scene sceneID="tf9-Xc-PQv">
+        <scene sceneID="GEI-IF-rBe">
             <objects>
-                <tableViewController id="eBn-aY-gdV" customClass="ListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" id="0ta-07-jxE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="LSS-TZ-iz3" customClass="ListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="215" sectionHeaderHeight="28" sectionFooterHeight="28" id="CPE-6A-j9a">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="fpb-np-tQO" customClass="TimeLineCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="210"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="fZ8-Lc-jqB" customClass="TimeLineCell">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fpb-np-tQO" id="Xsc-I2-TwB">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="209.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Lc-jqB" id="FIW-kt-2YB">
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfy-oM-v9t">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="161" y="8" width="152" height="39"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZF-dE-8sM">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="161" y="48" width="222" height="112"/>
-                                            </variation>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbl-qf-5ps">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="161" y="162" width="136" height="39.5"/>
-                                            </variation>
-                                        </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kZ5-5J-J8n">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="22" y="0.0" width="89" height="209.5"/>
-                                            </variation>
-                                        </imageView>
-                                    </subviews>
-                                    <variation key="default">
-                                        <mask key="subviews">
-                                            <exclude reference="wfy-oM-v9t"/>
-                                            <exclude reference="qZF-dE-8sM"/>
-                                            <exclude reference="Sbl-qf-5ps"/>
-                                            <exclude reference="kZ5-5J-J8n"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact">
-                                        <mask key="subviews">
-                                            <include reference="wfy-oM-v9t"/>
-                                            <include reference="qZF-dE-8sM"/>
-                                            <include reference="Sbl-qf-5ps"/>
-                                            <include reference="kZ5-5J-J8n"/>
-                                        </mask>
-                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bodyLabel" destination="qZF-dE-8sM" id="Knh-bn-mSu"/>
-                                    <outlet property="dateLabel" destination="wfy-oM-v9t" id="JQy-lP-UT9"/>
-                                    <outlet property="loactionLabel" destination="Sbl-qf-5ps" id="UG4-VX-XQN"/>
+                                    <segue destination="hYg-em-tjQ" kind="modal" identifier="edit" id="ezu-x3-mSD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="eBn-aY-gdV" id="WR3-aD-THo"/>
-                            <outlet property="delegate" destination="eBn-aY-gdV" id="YbZ-er-mwK"/>
+                            <outlet property="dataSource" destination="LSS-TZ-iz3" id="1r9-4a-obS"/>
+                            <outlet property="delegate" destination="LSS-TZ-iz3" id="j1V-uT-nSw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="26z-yq-C1B"/>
+                    <navigationItem key="navigationItem" id="87I-vN-iYU">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="iqu-Th-Yw5">
+                            <connections>
+                                <segue destination="hYg-em-tjQ" kind="modal" identifier="add" id="cf4-at-qYA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4M-2K-qUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EFn-X9-635" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2875.5" y="58"/>
+            <point key="canvasLocation" x="2782.5" y="-671"/>
         </scene>
         <!--recommend-->
         <scene sceneID="xLZ-zW-pOM">
@@ -385,4 +344,7 @@
         <image name="star" width="30" height="30"/>
         <image name="we" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iCx-j0-gOy"/>
+    </inferredMetricsTieBreakers>
 </document>
