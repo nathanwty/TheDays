@@ -271,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="215" id="fZ8-Lc-jqB" customClass="TimeLineCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" rowHeight="215" id="fZ8-Lc-jqB" customClass="TimeLineCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Lc-jqB" id="FIW-kt-2YB">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -345,6 +345,6 @@
         <image name="we" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iCx-j0-gOy"/>
+        <segue reference="cf4-at-qYA"/>
     </inferredMetricsTieBreakers>
 </document>
