@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Automatic">
-    <entity name="DiaryEntry" representedClassName="DirayEntry" syncable="YES">
+    <entity name="DiaryEntry" representedClassName="DiaryEntry" syncable="YES">
         <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="futureDate" optional="YES" attributeType="Date" syncable="YES"/>
@@ -11,6 +11,6 @@
         <attribute name="weatherImageData" optional="YES" attributeType="Binary" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DiaryEntry" positionX="-162" positionY="216" width="128" height="163"/>
+        <element name="DiaryEntry" positionX="-162" positionY="216" width="128" height="165"/>
     </elements>
 </model>
