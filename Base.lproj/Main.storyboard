@@ -17,13 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YJW-N7-Ytm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="write something here..." translatesAutoresizingMaskIntoConstraints="NO" id="YJW-N7-Ytm">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
+                                    <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="17"/>
                                     <rect key="frame" x="76" y="163" width="304" height="375"/>
                                 </variation>
                             </textView>
@@ -275,9 +275,64 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fZ8-Lc-jqB" id="FIW-kt-2YB">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-Q7-vTy">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="120" y="8" width="225" height="25"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BodyLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZeM-vh-S7g">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="120" y="41" width="272" height="122"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIt-LG-2jL">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="120" y="171" width="231" height="30"/>
+                                            </variation>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R6f-hi-PLD">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="8" width="112" height="193"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="jEc-Q7-vTy"/>
+                                            <exclude reference="ZeM-vh-S7g"/>
+                                            <exclude reference="cIt-LG-2jL"/>
+                                            <exclude reference="R6f-hi-PLD"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="jEc-Q7-vTy"/>
+                                            <include reference="ZeM-vh-S7g"/>
+                                            <include reference="cIt-LG-2jL"/>
+                                            <include reference="R6f-hi-PLD"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hYg-em-tjQ" kind="modal" identifier="edit" id="ezu-x3-mSD"/>
+                                    <outlet property="bodyLabel" destination="ZeM-vh-S7g" id="vdy-fI-NNp"/>
+                                    <outlet property="dateLabel" destination="jEc-Q7-vTy" id="Hcl-kR-9C6"/>
+                                    <outlet property="linePart" destination="R6f-hi-PLD" id="W2s-yU-f4q"/>
+                                    <outlet property="loactionLabel" destination="cIt-LG-2jL" id="iAO-jn-wbG"/>
+                                    <segue destination="hYg-em-tjQ" kind="show" identifier="edit" id="7aV-bT-TjX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -289,7 +344,7 @@
                     <navigationItem key="navigationItem" id="87I-vN-iYU">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="iqu-Th-Yw5">
                             <connections>
-                                <segue destination="hYg-em-tjQ" kind="modal" identifier="add" id="cf4-at-qYA"/>
+                                <segue destination="hYg-em-tjQ" kind="presentation" identifier="add" id="H3v-vg-6gW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -345,6 +400,6 @@
         <image name="we" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cf4-at-qYA"/>
+        <segue reference="7aV-bT-TjX"/>
     </inferredMetricsTieBreakers>
 </document>

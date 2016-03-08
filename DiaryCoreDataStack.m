@@ -77,6 +77,7 @@
     if (!coordinator) {
         return nil;
     }
+    //NSManagedObjectContext init 
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
