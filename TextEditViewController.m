@@ -59,10 +59,6 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -88,6 +84,7 @@
     [self dissmissSelf];
     
 }
+
 - (IBAction)cancelWasPressed:(id)sender {
     [self dissmissSelf];
 }
