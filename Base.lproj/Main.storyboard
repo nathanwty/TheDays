@@ -41,7 +41,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="RDc-c0-8Mm">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Zyg-eJ-kcl">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Zyg-eJ-kcl">
                             <connections>
                                 <action selector="cancelWasPressed:" destination="5Qv-UN-u69" id="18y-lv-koa"/>
                             </connections>
@@ -96,7 +96,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="noY-qQ-QyI">
-                                                    <rect key="frame" x="125" y="25" width="150" height="150"/>
+                                                    <rect key="frame" x="123" y="41" width="150" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
@@ -222,7 +222,7 @@
             </objects>
             <point key="canvasLocation" x="1044" y="-635.21333333333337"/>
         </scene>
-        <!--List Table View Controller-->
+        <!--TimeLine-->
         <scene sceneID="GEI-IF-rBe">
             <objects>
                 <tableViewController id="LSS-TZ-iz3" customClass="ListTableViewController" sceneMemberID="viewController">
@@ -279,8 +279,8 @@
                             <outlet property="delegate" destination="LSS-TZ-iz3" id="j1V-uT-nSw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="87I-vN-iYU">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="iqu-Th-Yw5">
+                    <navigationItem key="navigationItem" title="TimeLine" id="87I-vN-iYU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="iqu-Th-Yw5">
                             <connections>
                                 <segue destination="hYg-em-tjQ" kind="modal" identifier="add" id="H3v-vg-6gW"/>
                             </connections>
