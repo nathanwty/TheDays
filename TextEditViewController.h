@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 #import "DiaryEntry.h"
-#import "CDSideBarController.h"
+#import "VLDContextSheet.h"
 
-@interface TextEditViewController : UIViewController<CDSideBarControllerDelegate>
 
-{
-    CDSideBarController *sideBar;
-}
+@interface TextEditViewController : UIViewController<VLDContextSheetDelegate>
+
 
 @property (nonatomic, strong) DiaryEntry *entry;
+@property (strong, nonatomic) VLDContextSheet *contextSheet;
+
 
 
 

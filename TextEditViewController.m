@@ -9,6 +9,7 @@
 #import "TextEditViewController.h"
 #import "DiaryEntry.h"
 #import "DiaryCoreDataStack.h"
+#import "VLDContextSheetItem.h"
 
 @interface TextEditViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate,UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
@@ -55,19 +56,70 @@
 
     self.imagePikerButton.layer.cornerRadius = CGRectGetWidth(self.imagePikerButton.frame) / 2.0f;
     
-    //CDSideBarController.
-    NSArray *imageList = @[[UIImage imageNamed:@"menuChat.png"], [UIImage imageNamed:@"menuUsers.png"], [UIImage imageNamed:@"menuMap.png"], [UIImage imageNamed:@"menuClose.png"]]; sideBar = [[CDSideBarController alloc] initWithImages:imageList];
-    sideBar.delegate = self;
-
+    //creat ContextSheet
+    [self createContextSheet];
     
+    
+    //主色调
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIGestureRecognizer *gestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget: self
+                                                                                           action: @selector(longPressed:)];
+    [self.view addGestureRecognizer: gestureRecognizer];
+    
+
+}
+
+//VLD methods
+- (void) createContextSheet {
+    VLDContextSheetItem *item1 = [[VLDContextSheetItem alloc] initWithTitle: @"Gift"
+                                                                      image: [UIImage imageNamed: @"gift"]
+                                                           highlightedImage: [UIImage imageNamed: @"gift_highlighted"]];
+    
+    
+    VLDContextSheetItem *item2 = [[VLDContextSheetItem alloc] initWithTitle: @"Add to"
+                                                                      image: [UIImage imageNamed: @"add"]
+                                                           highlightedImage: [UIImage imageNamed: @"add_highlighted"]];
+    
+    VLDContextSheetItem *item3 = [[VLDContextSheetItem alloc] initWithTitle: @"Share"
+                                                                      image: [UIImage imageNamed: @"share"]
+                                                           highlightedImage: [UIImage imageNamed: @"share_highlighted"]];
+    
+    self.contextSheet = [[VLDContextSheet alloc] initWithItems: @[ item1, item2, item3 ]];
+    self.contextSheet.delegate = self;
+}
+
+- (void) contextSheet: (VLDContextSheet *) contextSheet didSelectItem: (VLDContextSheetItem *) item {
+    NSLog(@"Selected item: %@", item.title);
+}
+
+- (void) longPressed: (UIGestureRecognizer *) gestureRecognizer {
+    if(gestureRecognizer.state == UIGestureRecognizerStateBegan) {
+        
+        [self.contextSheet startWithGestureRecognizer: gestureRecognizer
+                                               inView: self.view];
+    }
+}
+
+- (void) willRotateToInterfaceOrientation: (UIInterfaceOrientation) toInterfaceOrientation
+                                 duration: (NSTimeInterval) duration {
+    
+    [super willRotateToInterfaceOrientation: toInterfaceOrientation duration: duration];
+    
+    [self.contextSheet end];
 }
 
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self.textView becomeFirstResponder];
-}
+
+
+
+
+
+
+
+
+
+
 
 
 - (void)dissmissSelf
@@ -163,12 +215,7 @@
 }
 
 
-#pragma mark - CDSideBarController delegate
 
-- (void)menuButtonClicked:(int)index
-{
-    // Execute what ever you want
-}
 
 /*
 #pragma mark - Navigation
@@ -180,11 +227,13 @@
 }
 */
 
-- (void)viewDidAppear:(BOOL)animated
+/*
+ - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
     [sideBar insertMenuButtonOnView:[UIApplication sharedApplication].delegate.window atPosition:CGPointMake(self.view.frame.size.width - 70, 50)];
 }
+ */
 
 @end

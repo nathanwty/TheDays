@@ -209,6 +209,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CPD-kL-Mln" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="timeline" image="list" id="TBI-hd-5ka"/>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NGe-bb-Gi3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hN6-Fn-knv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
