@@ -55,6 +55,9 @@
 
     self.imagePikerButton.layer.cornerRadius = CGRectGetWidth(self.imagePikerButton.frame) / 2.0f;
     
+    //CDSideBarController.
+    NSArray *imageList = @[[UIImage imageNamed:@"menuChat.png"], [UIImage imageNamed:@"menuUsers.png"], [UIImage imageNamed:@"menuMap.png"], [UIImage imageNamed:@"menuClose.png"]]; sideBar = [[CDSideBarController alloc] initWithImages:imageList];
+    sideBar.delegate = self;
 
     
 }
@@ -159,6 +162,14 @@
     }
 }
 
+
+#pragma mark - CDSideBarController delegate
+
+- (void)menuButtonClicked:(int)index
+{
+    // Execute what ever you want
+}
+
 /*
 #pragma mark - Navigation
 
@@ -168,5 +179,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [sideBar insertMenuButtonOnView:[UIApplication sharedApplication].delegate.window atPosition:CGPointMake(self.view.frame.size.width - 70, 50)];
+}
 
 @end

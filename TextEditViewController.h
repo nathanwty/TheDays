@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "DiaryEntry.h"
+#import "CDSideBarController.h"
 
-@interface TextEditViewController : UIViewController
+@interface TextEditViewController : UIViewController<CDSideBarControllerDelegate>
+
+{
+    CDSideBarController *sideBar;
+}
 
 @property (nonatomic, strong) DiaryEntry *entry;
 
