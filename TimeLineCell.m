@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *loactionLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *linePart;
+
 
 
 @end

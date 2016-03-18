@@ -89,7 +89,7 @@
                             <tableViewSection headerTitle="个人资料" id="Jjj-go-Lad">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="J35-9R-DvW">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="200"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J35-9R-DvW" id="PHv-mS-QYK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
@@ -103,7 +103,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LON-eb-NnK">
-                                        <rect key="frame" x="0.0" y="228" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="292" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LON-eb-NnK" id="VLj-vu-Kei">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -115,7 +115,7 @@
                             <tableViewSection id="c2T-xQ-5bA">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1cI-Kb-p8G">
-                                        <rect key="frame" x="0.0" y="272" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="336" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1cI-Kb-p8G" id="L35-c3-9K9">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -123,7 +123,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="FpD-bL-mm9">
-                                        <rect key="frame" x="0.0" y="316" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="380" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FpD-bL-mm9" id="O2Z-59-khj">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -131,7 +131,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Dzp-sq-0O1">
-                                        <rect key="frame" x="0.0" y="360" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="424" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dzp-sq-0O1" id="rzh-SK-UiB">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -139,7 +139,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="VsT-w3-ec0">
-                                        <rect key="frame" x="0.0" y="404" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="468" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VsT-w3-ec0" id="sgh-ZF-qOz">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
@@ -232,17 +232,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="187" id="GVE-vd-iz6" customClass="TimeLineCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="187" id="GVE-vd-iz6" customClass="TimeLineCell">
                                 <rect key="frame" x="0.0" y="92" width="320" height="187"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GVE-vd-iz6" id="I4e-si-sO4">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="186.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="186.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="mlj-FE-iSN">
-                                            <rect key="frame" x="8" y="0.0" width="73" height="178.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ANJ-Qz-PnX">
                                             <rect key="frame" x="89" y="12" width="211" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -264,14 +260,18 @@
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" id="4I3-kz-6cs" customClass="TimeLineView">
+                                            <rect key="frame" x="8" y="0.0" width="73" height="186.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="bodyLabel" destination="XKF-IT-Bm0" id="ah2-fW-4cx"/>
                                     <outlet property="dateLabel" destination="ANJ-Qz-PnX" id="JC9-ih-DW5"/>
-                                    <outlet property="linePart" destination="mlj-FE-iSN" id="fJu-a7-USn"/>
                                     <outlet property="loactionLabel" destination="fYc-FP-ReY" id="9aE-eF-5j6"/>
-                                    <segue destination="hYg-em-tjQ" kind="modal" id="3V0-eV-AK2"/>
+                                    <segue destination="hYg-em-tjQ" kind="modal" id="l18-q4-3Vw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -339,6 +339,7 @@
         <image name="we" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="H3v-vg-6gW"/>
+        <segue reference="l18-q4-3Vw"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.24705882352941178" green="0.57647058823529407" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
 </document>
