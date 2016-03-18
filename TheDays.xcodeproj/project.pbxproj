@@ -9,13 +9,32 @@
 /* Begin PBXBuildFile section */
 		DD2AE2171C69CC1C00C8872F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE2161C69CC1C00C8872F /* main.m */; };
 		DD2AE21A1C69CC1C00C8872F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE2191C69CC1C00C8872F /* AppDelegate.m */; };
-		DD2AE21D1C69CC1C00C8872F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE21C1C69CC1C00C8872F /* ViewController.m */; };
 		DD2AE2201C69CC1C00C8872F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE21E1C69CC1C00C8872F /* Main.storyboard */; };
 		DD2AE2231C69CC1C00C8872F /* TheDays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE2211C69CC1C00C8872F /* TheDays.xcdatamodeld */; };
-		DD2AE2251C69CC1C00C8872F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE2241C69CC1C00C8872F /* Assets.xcassets */; };
+		DD2AE2251C69CC1C00C8872F /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE2241C69CC1C00C8872F /* Image.xcassets */; };
 		DD2AE2281C69CC1C00C8872F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2AE2261C69CC1C00C8872F /* LaunchScreen.storyboard */; };
 		DD2AE2331C69CC1D00C8872F /* TheDaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE2321C69CC1D00C8872F /* TheDaysTests.m */; };
 		DD2AE23E1C69CC1D00C8872F /* TheDaysUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2AE23D1C69CC1D00C8872F /* TheDaysUITests.m */; };
+		DD30F28C1C8473BE000E32EE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F28B1C8473BE000E32EE /* CoreData.framework */; };
+		DD30F2941C8A9D3E000E32EE /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2931C8A9D3E000E32EE /* AboutMeViewController.m */; };
+		DD30F2961C8AA37B000E32EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F2951C8AA37B000E32EE /* Foundation.framework */; };
+		DD30F2981C8AA390000E32EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F2971C8AA390000E32EE /* CoreGraphics.framework */; };
+		DD30F29A1C8AA39F000E32EE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F2991C8AA39F000E32EE /* MessageUI.framework */; };
+		DD30F2A51C8AD49A000E32EE /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2A11C8AD49A000E32EE /* MBProgressHUD+MJ.m */; };
+		DD30F2A61C8AD49A000E32EE /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DD30F2A21C8AD49A000E32EE /* MBProgressHUD.bundle */; };
+		DD30F2A71C8AD49A000E32EE /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2A41C8AD49A000E32EE /* MBProgressHUD.m */; };
+		DD30F2B81C8C5943000E32EE /* DiaryEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2B61C8C5943000E32EE /* DiaryEntry.m */; };
+		DD30F2BB1C8C6562000E32EE /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2BA1C8C6562000E32EE /* ListTableViewController.m */; };
+		DD30F2BE1C8C6716000E32EE /* DiaryCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2BD1C8C6716000E32EE /* DiaryCoreDataStack.m */; };
+		DD30F2C11C8C6892000E32EE /* TimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2C01C8C6892000E32EE /* TimeLineCell.m */; };
+		DD30F2D21C9A862C000E32EE /* VLDContextSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2CD1C9A862C000E32EE /* VLDContextSheet.m */; };
+		DD30F2D31C9A862C000E32EE /* VLDContextSheetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2CF1C9A862C000E32EE /* VLDContextSheetItem.m */; };
+		DD30F2D41C9A862C000E32EE /* VLDContextSheetItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2D11C9A862C000E32EE /* VLDContextSheetItemView.m */; };
+		DD30F2D61C9A8CC5000E32EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F2D51C9A8CC5000E32EE /* UIKit.framework */; };
+		DD30F2D91C9C481E000E32EE /* TimeLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2D81C9C481E000E32EE /* TimeLineView.m */; };
+		DD9BAA0A1C83FDC3004BAA2B /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9BAA091C83FDC3004BAA2B /* TextEditViewController.m */; };
+		DD9BAA101C8400F9004BAA2B /* RecommendPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9BAA0F1C8400F9004BAA2B /* RecommendPageViewController.m */; };
+		FEE1FDA646AA59D1A41DA7A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC5D588E3D54AD7F9B6C1F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46CC5D588E3D54AD7F9B6C1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65EF1017F7D99DE5B98E520 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2AE2121C69CC1C00C8872F /* TheDays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AE2161C69CC1C00C8872F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD2AE2181C69CC1C00C8872F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD2AE2191C69CC1C00C8872F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD2AE21B1C69CC1C00C8872F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD2AE21C1C69CC1C00C8872F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD2AE21F1C69CC1C00C8872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD2AE2221C69CC1C00C8872F /* TheDays.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheDays.xcdatamodel; sourceTree = "<group>"; };
-		DD2AE2241C69CC1C00C8872F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD2AE2241C69CC1C00C8872F /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		DD2AE2271C69CC1C00C8872F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2AE2291C69CC1C00C8872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2AE22E1C69CC1D00C8872F /* TheDaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheDaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +72,39 @@
 		DD2AE2391C69CC1D00C8872F /* TheDaysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheDaysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2AE23D1C69CC1D00C8872F /* TheDaysUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheDaysUITests.m; sourceTree = "<group>"; };
 		DD2AE23F1C69CC1D00C8872F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD30F28B1C8473BE000E32EE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD30F2921C8A9D3E000E32EE /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		DD30F2931C8A9D3E000E32EE /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		DD30F2951C8AA37B000E32EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD30F2971C8AA390000E32EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD30F2991C8AA39F000E32EE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DD30F2A01C8AD49A000E32EE /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		DD30F2A11C8AD49A000E32EE /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		DD30F2A21C8AD49A000E32EE /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		DD30F2A31C8AD49A000E32EE /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DD30F2A41C8AD49A000E32EE /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DD30F2B51C8C5943000E32EE /* DiaryEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryEntry.h; sourceTree = "<group>"; };
+		DD30F2B61C8C5943000E32EE /* DiaryEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryEntry.m; sourceTree = "<group>"; };
+		DD30F2B91C8C6562000E32EE /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		DD30F2BA1C8C6562000E32EE /* ListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		DD30F2BC1C8C6716000E32EE /* DiaryCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiaryCoreDataStack.h; sourceTree = "<group>"; };
+		DD30F2BD1C8C6716000E32EE /* DiaryCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiaryCoreDataStack.m; sourceTree = "<group>"; };
+		DD30F2BF1C8C6892000E32EE /* TimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineCell.h; sourceTree = "<group>"; };
+		DD30F2C01C8C6892000E32EE /* TimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineCell.m; sourceTree = "<group>"; };
+		DD30F2CC1C9A862C000E32EE /* VLDContextSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheet.h; sourceTree = "<group>"; };
+		DD30F2CD1C9A862C000E32EE /* VLDContextSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheet.m; sourceTree = "<group>"; };
+		DD30F2CE1C9A862C000E32EE /* VLDContextSheetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheetItem.h; sourceTree = "<group>"; };
+		DD30F2CF1C9A862C000E32EE /* VLDContextSheetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetItem.m; sourceTree = "<group>"; };
+		DD30F2D01C9A862C000E32EE /* VLDContextSheetItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheetItemView.h; sourceTree = "<group>"; };
+		DD30F2D11C9A862C000E32EE /* VLDContextSheetItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetItemView.m; sourceTree = "<group>"; };
+		DD30F2D51C9A8CC5000E32EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD30F2D71C9C481E000E32EE /* TimeLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeLineView.h; sourceTree = "<group>"; };
+		DD30F2D81C9C481E000E32EE /* TimeLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineView.m; sourceTree = "<group>"; };
+		DD9BAA081C83FDC3004BAA2B /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
+		DD9BAA091C83FDC3004BAA2B /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
+		DD9BAA0E1C8400F9004BAA2B /* RecommendPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendPageViewController.h; sourceTree = "<group>"; };
+		DD9BAA0F1C8400F9004BAA2B /* RecommendPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendPageViewController.m; sourceTree = "<group>"; };
+		DDAD8CCD667C512DA7D28F18 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +112,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD30F2D61C9A8CC5000E32EE /* UIKit.framework in Frameworks */,
+				DD30F29A1C8AA39F000E32EE /* MessageUI.framework in Frameworks */,
+				DD30F2981C8AA390000E32EE /* CoreGraphics.framework in Frameworks */,
+				DD30F2961C8AA37B000E32EE /* Foundation.framework in Frameworks */,
+				DD30F28C1C8473BE000E32EE /* CoreData.framework in Frameworks */,
+				FEE1FDA646AA59D1A41DA7A5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,13 +138,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CD8D58D6861A1CA776C316A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2D51C9A8CC5000E32EE /* UIKit.framework */,
+				DD30F2991C8AA39F000E32EE /* MessageUI.framework */,
+				DD30F2971C8AA390000E32EE /* CoreGraphics.framework */,
+				DD30F2951C8AA37B000E32EE /* Foundation.framework */,
+				DD30F28B1C8473BE000E32EE /* CoreData.framework */,
+				46CC5D588E3D54AD7F9B6C1F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D5903DD957A126538B8CDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D65EF1017F7D99DE5B98E520 /* Pods.debug.xcconfig */,
+				DDAD8CCD667C512DA7D28F18 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD2AE2091C69CC1C00C8872F = {
 			isa = PBXGroup;
 			children = (
 				DD2AE2141C69CC1C00C8872F /* TheDays */,
+				DD30F2A81C8AD4A1000E32EE /* Other */,
 				DD2AE2311C69CC1D00C8872F /* TheDaysTests */,
 				DD2AE23C1C69CC1D00C8872F /* TheDaysUITests */,
 				DD2AE2131C69CC1C00C8872F /* Products */,
+				C9D5903DD957A126538B8CDB /* Pods */,
+				8CD8D58D6861A1CA776C316A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +186,12 @@
 		DD2AE2141C69CC1C00C8872F /* TheDays */ = {
 			isa = PBXGroup;
 			children = (
-				DD2AE2181C69CC1C00C8872F /* AppDelegate.h */,
-				DD2AE2191C69CC1C00C8872F /* AppDelegate.m */,
-				DD2AE21B1C69CC1C00C8872F /* ViewController.h */,
-				DD2AE21C1C69CC1C00C8872F /* ViewController.m */,
+				DD30F29D1C8AC4E9000E32EE /* TimeLine */,
+				DD30F29E1C8AC4EB000E32EE /* TextEdit */,
+				DD30F29C1C8AC4E6000E32EE /* Recommend */,
+				DD30F29B1C8AC4DC000E32EE /* AboutMe */,
 				DD2AE21E1C69CC1C00C8872F /* Main.storyboard */,
-				DD2AE2241C69CC1C00C8872F /* Assets.xcassets */,
+				DD2AE2241C69CC1C00C8872F /* Image.xcassets */,
 				DD2AE2261C69CC1C00C8872F /* LaunchScreen.storyboard */,
 				DD2AE2291C69CC1C00C8872F /* Info.plist */,
 				DD2AE2211C69CC1C00C8872F /* TheDays.xcdatamodeld */,
@@ -120,6 +203,8 @@
 		DD2AE2151C69CC1C00C8872F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD2AE2181C69CC1C00C8872F /* AppDelegate.h */,
+				DD2AE2191C69CC1C00C8872F /* AppDelegate.m */,
 				DD2AE2161C69CC1C00C8872F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -143,6 +228,94 @@
 			path = TheDaysUITests;
 			sourceTree = "<group>";
 		};
+		DD30F29B1C8AC4DC000E32EE /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2921C8A9D3E000E32EE /* AboutMeViewController.h */,
+				DD30F2931C8A9D3E000E32EE /* AboutMeViewController.m */,
+			);
+			name = AboutMe;
+			sourceTree = "<group>";
+		};
+		DD30F29C1C8AC4E6000E32EE /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				DD9BAA0E1C8400F9004BAA2B /* RecommendPageViewController.h */,
+				DD9BAA0F1C8400F9004BAA2B /* RecommendPageViewController.m */,
+			);
+			name = Recommend;
+			sourceTree = "<group>";
+		};
+		DD30F29D1C8AC4E9000E32EE /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2B91C8C6562000E32EE /* ListTableViewController.h */,
+				DD30F2BA1C8C6562000E32EE /* ListTableViewController.m */,
+				DD30F2BF1C8C6892000E32EE /* TimeLineCell.h */,
+				DD30F2C01C8C6892000E32EE /* TimeLineCell.m */,
+				DD30F2D71C9C481E000E32EE /* TimeLineView.h */,
+				DD30F2D81C9C481E000E32EE /* TimeLineView.m */,
+			);
+			name = TimeLine;
+			sourceTree = "<group>";
+		};
+		DD30F29E1C8AC4EB000E32EE /* TextEdit */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2CB1C9A862C000E32EE /* VLDContextSheet */,
+				DD9BAA081C83FDC3004BAA2B /* TextEditViewController.h */,
+				DD9BAA091C83FDC3004BAA2B /* TextEditViewController.m */,
+				DD30F2BC1C8C6716000E32EE /* DiaryCoreDataStack.h */,
+				DD30F2BD1C8C6716000E32EE /* DiaryCoreDataStack.m */,
+				DD30F2B51C8C5943000E32EE /* DiaryEntry.h */,
+				DD30F2B61C8C5943000E32EE /* DiaryEntry.m */,
+			);
+			name = TextEdit;
+			sourceTree = "<group>";
+		};
+		DD30F29F1C8AD49A000E32EE /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2A01C8AD49A000E32EE /* MBProgressHUD+MJ.h */,
+				DD30F2A11C8AD49A000E32EE /* MBProgressHUD+MJ.m */,
+				DD30F2A21C8AD49A000E32EE /* MBProgressHUD.bundle */,
+				DD30F2A31C8AD49A000E32EE /* MBProgressHUD.h */,
+				DD30F2A41C8AD49A000E32EE /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		DD30F2A81C8AD4A1000E32EE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2A91C8AD4BB000E32EE /* Lib */,
+			);
+			name = Other;
+			path = TheDays;
+			sourceTree = "<group>";
+		};
+		DD30F2A91C8AD4BB000E32EE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F29F1C8AD49A000E32EE /* MBProgressHUD */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		DD30F2CB1C9A862C000E32EE /* VLDContextSheet */ = {
+			isa = PBXGroup;
+			children = (
+				DD30F2CC1C9A862C000E32EE /* VLDContextSheet.h */,
+				DD30F2CD1C9A862C000E32EE /* VLDContextSheet.m */,
+				DD30F2CE1C9A862C000E32EE /* VLDContextSheetItem.h */,
+				DD30F2CF1C9A862C000E32EE /* VLDContextSheetItem.m */,
+				DD30F2D01C9A862C000E32EE /* VLDContextSheetItemView.h */,
+				DD30F2D11C9A862C000E32EE /* VLDContextSheetItemView.m */,
+			);
+			name = VLDContextSheet;
+			path = "../../../Downloads/thedaysactions/VLDContextSheet-master/VLDContextSheet";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +323,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD2AE2421C69CC1D00C8872F /* Build configuration list for PBXNativeTarget "TheDays" */;
 			buildPhases = (
+				8EAD582D74ECE8744A0DCCEF /* Check Pods Manifest.lock */,
 				DD2AE20E1C69CC1C00C8872F /* Sources */,
 				DD2AE20F1C69CC1C00C8872F /* Frameworks */,
 				DD2AE2101C69CC1C00C8872F /* Resources */,
+				C3D42BB4682C8F79578861F9 /* Embed Pods Frameworks */,
+				FF3E274989C0B1CD6F265C3F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,7 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2AE2281C69CC1C00C8872F /* LaunchScreen.storyboard in Resources */,
-				DD2AE2251C69CC1C00C8872F /* Assets.xcassets in Resources */,
+				DD30F2A61C8AD49A000E32EE /* MBProgressHUD.bundle in Resources */,
+				DD2AE2251C69CC1C00C8872F /* Image.xcassets in Resources */,
 				DD2AE2201C69CC1C00C8872F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,15 +445,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8EAD582D74ECE8744A0DCCEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3D42BB4682C8F79578861F9 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF3E274989C0B1CD6F265C3F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD2AE20E1C69CC1C00C8872F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2AE21D1C69CC1C00C8872F /* ViewController.m in Sources */,
+				DD30F2BE1C8C6716000E32EE /* DiaryCoreDataStack.m in Sources */,
+				DD30F2D31C9A862C000E32EE /* VLDContextSheetItem.m in Sources */,
 				DD2AE21A1C69CC1C00C8872F /* AppDelegate.m in Sources */,
+				DD9BAA101C8400F9004BAA2B /* RecommendPageViewController.m in Sources */,
+				DD9BAA0A1C83FDC3004BAA2B /* TextEditViewController.m in Sources */,
+				DD30F2A71C8AD49A000E32EE /* MBProgressHUD.m in Sources */,
+				DD30F2B81C8C5943000E32EE /* DiaryEntry.m in Sources */,
+				DD30F2D21C9A862C000E32EE /* VLDContextSheet.m in Sources */,
+				DD30F2A51C8AD49A000E32EE /* MBProgressHUD+MJ.m in Sources */,
+				DD30F2941C8A9D3E000E32EE /* AboutMeViewController.m in Sources */,
+				DD30F2D41C9A862C000E32EE /* VLDContextSheetItemView.m in Sources */,
+				DD30F2D91C9C481E000E32EE /* TimeLineView.m in Sources */,
 				DD2AE2231C69CC1C00C8872F /* TheDays.xcdatamodeld in Sources */,
+				DD30F2C11C8C6892000E32EE /* TimeLineCell.m in Sources */,
 				DD2AE2171C69CC1C00C8872F /* main.m in Sources */,
+				DD30F2BB1C8C6562000E32EE /* ListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -413,6 +650,7 @@
 		};
 		DD2AE2431C69CC1D00C8872F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65EF1017F7D99DE5B98E520 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheDays/Info.plist;
@@ -424,6 +662,7 @@
 		};
 		DD2AE2441C69CC1D00C8872F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDAD8CCD667C512DA7D28F18 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheDays/Info.plist;
@@ -500,6 +739,7 @@
 				DD2AE2441C69CC1D00C8872F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2AE2451C69CC1D00C8872F /* Build configuration list for PBXNativeTarget "TheDaysTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +748,7 @@
 				DD2AE2471C69CC1D00C8872F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2AE2481C69CC1D00C8872F /* Build configuration list for PBXNativeTarget "TheDaysUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +757,7 @@
 				DD2AE24A1C69CC1D00C8872F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
