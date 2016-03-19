@@ -24,14 +24,14 @@
                                 <rect key="frame" x="123" y="116" width="172" height="40.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XmN-VX-T7b" userLabel="Image Picker Button">
                                 <rect key="frame" x="20" y="108" width="48" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icn_noimage">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="imageSelectionButtonWasPressed:" destination="5Qv-UN-u69" eventType="touchUpInside" id="caw-wt-nwd"/>
@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="1533.3333333333333" y="1480.5866666666666"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="dzQ-2w-cid">
             <objects>
-                <tabBarController id="gfs-xg-5sI" sceneMemberID="viewController">
+                <tabBarController id="gfs-xg-5sI" customClass="TabBarViewController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3Ru-aU-fpJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -184,7 +184,7 @@
         <scene sceneID="89D-Q9-NL2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hYg-em-tjQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="typehere" image="pencil" id="KrW-hb-oAd"/>
+                    <tabBarItem key="tabBarItem" title="typehere" image="nav_pencil_btn_.nor" selectedImage="nav_pencil_btn_sel" id="KrW-hb-oAd"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SCs-PB-1Um"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="IwC-lc-pEx">
@@ -207,7 +207,7 @@
         <scene sceneID="eSD-BN-8MZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CPD-kL-Mln" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="timeline" image="list" id="TBI-hd-5ka"/>
+                    <tabBarItem key="tabBarItem" title="timeline" image="nav_clock_btn_nor" selectedImage="nav_clock_btn_sel" id="TBI-hd-5ka"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="NGe-bb-Gi3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hN6-Fn-knv">
@@ -250,7 +250,7 @@
                                             <rect key="frame" x="89" y="41" width="211" height="96"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fYc-FP-ReY">
@@ -261,12 +261,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" id="J3a-qO-kGT" userLabel="Dot View">
-                                            <rect key="frame" x="40" y="17" width="10" height="10"/>
+                                            <rect key="frame" x="47" y="17" width="10" height="10"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.2470588235" green="0.57647058819999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                         <view contentMode="scaleToFill" id="1AN-Dh-eiy" userLabel="Line View">
-                                            <rect key="frame" x="45" y="0.0" width="1" height="187"/>
+                                            <rect key="frame" x="52" y="0.0" width="1" height="187"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" red="0.2470588235" green="0.57647058819999997" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
@@ -303,7 +303,7 @@
         <scene sceneID="xLZ-zW-pOM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zkw-oK-2Q9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="recommend" image="star" id="4kE-2Q-mOw"/>
+                    <tabBarItem key="tabBarItem" title="recommend" image="nav_safari_btn_nor" selectedImage="nav_safari_btn_sel" id="4kE-2Q-mOw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="quI-NJ-y1c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -322,7 +322,7 @@
         <scene sceneID="jRF-eH-quF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vBM-B6-5Jj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="aboutme" image="we" id="Z90-Rj-tZ5"/>
+                    <tabBarItem key="tabBarItem" title="aboutme" image="nav_profile_btn_nor" selectedImage="nav_profile_btn_sel" id="Z90-Rj-tZ5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tmp-sB-nma">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -340,10 +340,14 @@
     </scenes>
     <resources>
         <image name="icn_noimage" width="47" height="47"/>
-        <image name="list" width="25" height="30"/>
-        <image name="pencil" width="30" height="30"/>
-        <image name="star" width="30" height="30"/>
-        <image name="we" width="30" height="30"/>
+        <image name="nav_clock_btn_nor" width="48" height="48"/>
+        <image name="nav_clock_btn_sel" width="48" height="48"/>
+        <image name="nav_pencil_btn_.nor" width="48" height="48"/>
+        <image name="nav_pencil_btn_sel" width="48" height="48"/>
+        <image name="nav_profile_btn_nor" width="48" height="48"/>
+        <image name="nav_profile_btn_sel" width="48" height="48"/>
+        <image name="nav_safari_btn_nor" width="48" height="48"/>
+        <image name="nav_safari_btn_sel" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="l18-q4-3Vw"/>

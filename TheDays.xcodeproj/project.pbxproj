@@ -31,6 +31,7 @@
 		DD30F2D31C9A862C000E32EE /* VLDContextSheetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2CF1C9A862C000E32EE /* VLDContextSheetItem.m */; };
 		DD30F2D41C9A862C000E32EE /* VLDContextSheetItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30F2D11C9A862C000E32EE /* VLDContextSheetItemView.m */; };
 		DD30F2D61C9A8CC5000E32EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD30F2D51C9A8CC5000E32EE /* UIKit.framework */; };
+		DD5098B01C9DA2E90061BFF6 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5098AF1C9DA2E90061BFF6 /* TabBarViewController.m */; };
 		DD9BAA0A1C83FDC3004BAA2B /* TextEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9BAA091C83FDC3004BAA2B /* TextEditViewController.m */; };
 		DD9BAA101C8400F9004BAA2B /* RecommendPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9BAA0F1C8400F9004BAA2B /* RecommendPageViewController.m */; };
 		FEE1FDA646AA59D1A41DA7A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC5D588E3D54AD7F9B6C1F /* libPods.a */; };
@@ -97,6 +98,8 @@
 		DD30F2D01C9A862C000E32EE /* VLDContextSheetItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLDContextSheetItemView.h; sourceTree = "<group>"; };
 		DD30F2D11C9A862C000E32EE /* VLDContextSheetItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLDContextSheetItemView.m; sourceTree = "<group>"; };
 		DD30F2D51C9A8CC5000E32EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD5098AE1C9DA2E90061BFF6 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		DD5098AF1C9DA2E90061BFF6 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		DD9BAA081C83FDC3004BAA2B /* TextEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEditViewController.h; sourceTree = "<group>"; };
 		DD9BAA091C83FDC3004BAA2B /* TextEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEditViewController.m; sourceTree = "<group>"; };
 		DD9BAA0E1C8400F9004BAA2B /* RecommendPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendPageViewController.h; sourceTree = "<group>"; };
@@ -202,6 +205,8 @@
 			children = (
 				DD2AE2181C69CC1C00C8872F /* AppDelegate.h */,
 				DD2AE2191C69CC1C00C8872F /* AppDelegate.m */,
+				DD5098AE1C9DA2E90061BFF6 /* TabBarViewController.h */,
+				DD5098AF1C9DA2E90061BFF6 /* TabBarViewController.m */,
 				DD2AE2161C69CC1C00C8872F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -505,6 +510,7 @@
 				DD30F2941C8A9D3E000E32EE /* AboutMeViewController.m in Sources */,
 				DD30F2D41C9A862C000E32EE /* VLDContextSheetItemView.m in Sources */,
 				DD2AE2231C69CC1C00C8872F /* TheDays.xcdatamodeld in Sources */,
+				DD5098B01C9DA2E90061BFF6 /* TabBarViewController.m in Sources */,
 				DD30F2C11C8C6892000E32EE /* TimeLineCell.m in Sources */,
 				DD2AE2171C69CC1C00C8872F /* main.m in Sources */,
 				DD30F2BB1C8C6562000E32EE /* ListTableViewController.m in Sources */,

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
                                     <constraint firstAttribute="height" constant="24" id="1Ld-f8-opx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -43,7 +44,7 @@
                                     <constraint firstAttribute="height" constant="93" id="41Z-Hy-D36"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -72,12 +73,12 @@
                                 <exclude reference="3iO-eY-seA"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="jY2-f5-B7P"/>
                                 <exclude reference="0lx-IL-b1i"/>
                                 <exclude reference="Tqp-Dg-Rw0"/>
                                 <exclude reference="aDd-dU-G9G"/>
                                 <exclude reference="6FK-2E-vRy"/>
                                 <exclude reference="ZvV-oL-RHL"/>
-                                <exclude reference="jY2-f5-B7P"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -86,12 +87,12 @@
                                 <include reference="3iO-eY-seA"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="jY2-f5-B7P"/>
                                 <include reference="0lx-IL-b1i"/>
                                 <include reference="Tqp-Dg-Rw0"/>
                                 <include reference="aDd-dU-G9G"/>
                                 <include reference="6FK-2E-vRy"/>
                                 <include reference="ZvV-oL-RHL"/>
-                                <include reference="jY2-f5-B7P"/>
                             </mask>
                         </variation>
                     </view>
