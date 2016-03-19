@@ -89,6 +89,9 @@
     self.contextSheet.delegate = self;
 }
 
+
+
+//扩展部分
 - (void) contextSheet: (VLDContextSheet *) contextSheet didSelectItem: (VLDContextSheetItem *) item {
     NSLog(@"Selected item: %@", item.title);
 }

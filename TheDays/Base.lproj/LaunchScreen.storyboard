@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,25 +18,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     Copyright (c) 2016年 Nathan. All rights reserved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4v-rJ-Dwh">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="1Ld-f8-opx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Ld-f8-opx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1Ld-f8-opx"/>
+                                    </mask>
+                                </variation>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TheDays" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3iO-eY-seA">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="41Z-Hy-D36"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="128" width="400" height="93"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="41Z-Hy-D36"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="41Z-Hy-D36"/>
+                                    </mask>
                                 </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3iO-eY-seA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0lx-IL-b1i"/>
+                            <constraint firstItem="f4v-rJ-Dwh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="6FK-2E-vRy"/>
+                            <constraint firstItem="3iO-eY-seA" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="112" id="Tqp-Dg-Rw0"/>
+                            <constraint firstItem="f4v-rJ-Dwh" firstAttribute="centerX" secondItem="3iO-eY-seA" secondAttribute="centerX" id="ZvV-oL-RHL"/>
+                            <constraint firstAttribute="trailing" secondItem="3iO-eY-seA" secondAttribute="trailing" id="aDd-dU-G9G"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="f4v-rJ-Dwh" secondAttribute="bottom" constant="8" symbolic="YES" id="jY2-f5-B7P"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="f4v-rJ-Dwh"/>
                                 <exclude reference="3iO-eY-seA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0lx-IL-b1i"/>
+                                <exclude reference="Tqp-Dg-Rw0"/>
+                                <exclude reference="aDd-dU-G9G"/>
+                                <exclude reference="6FK-2E-vRy"/>
+                                <exclude reference="ZvV-oL-RHL"/>
+                                <exclude reference="jY2-f5-B7P"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="f4v-rJ-Dwh"/>
                                 <include reference="3iO-eY-seA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0lx-IL-b1i"/>
+                                <include reference="Tqp-Dg-Rw0"/>
+                                <include reference="aDd-dU-G9G"/>
+                                <include reference="6FK-2E-vRy"/>
+                                <include reference="ZvV-oL-RHL"/>
+                                <include reference="jY2-f5-B7P"/>
                             </mask>
                         </variation>
                     </view>
