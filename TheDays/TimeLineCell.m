@@ -15,12 +15,20 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *bodyLabel;
 @property (weak, nonatomic) IBOutlet UILabel *loactionLabel;
+@property (weak, nonatomic) IBOutlet UIView *dotView;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 
 
 
 @end
 
 @implementation TimeLineCell
+
+
+//draw circle
+- (void)awakeFromNib {
+    _dotView.layer.cornerRadius = 5.0;
+}
 
 + (CGFloat)heightForEntry:(DiaryEntry *)entry {
     const CGFloat topMargin = 35.0f;
