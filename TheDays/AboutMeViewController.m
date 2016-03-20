@@ -49,20 +49,25 @@ NSTimer * timer;
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     
     //设置Table属性
-    //self.tableView.separatorColor = TCCoror(3, 123, 252);
+    //self.tableView.separatorColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
     
     self.imageCell.selectedBackgroundView = [[UIView alloc]initWithFrame:self.imageCell.frame];
     self.imageCell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
+    self.imageCell.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
     
     self.textCell.selectedBackgroundView = [[UIView alloc]initWithFrame:self.textCell.frame];
     self.textCell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
+    self.textCell.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
+    
     self.helpCell.selectedBackgroundView = [[UIView alloc]initWithFrame:self.helpCell.frame];
     self.helpCell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
+    
     self.feedBackCell.selectedBackgroundView = [[UIView alloc]initWithFrame:self.feedBackCell.frame];
     self.feedBackCell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
     
     self.recommed.selectedBackgroundView = [[UIView alloc]initWithFrame:self.recommed.frame];
     self.recommed.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
+    
     self.aboutSnot.selectedBackgroundView = [[UIView alloc]initWithFrame:self.aboutSnot.frame];
     self.aboutSnot.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f];
     
@@ -70,19 +75,6 @@ NSTimer * timer;
     self.tableView.dataSource = self;
     
     
-    //设置文字
-    
-    NSUserDefaults * defaults = [NSUserDefaults standardUserDefaults];
-    
-    //判断是否有存储帐号，如果有，就显示出来
-    if ([defaults valueForKey:@"textView"])
-    {
-        self.textView.text = [defaults valueForKey:@"textView"];
-    }
-    else
-    {
-        self.textView.text = @"有點文藝，有點年輕，但不是文藝青年。";
-    }
     
     //设置头像属性
     
@@ -103,7 +95,7 @@ NSTimer * timer;
     }
     else
     {
-        [self.imageHead setImage:[self ellipseImage:[UIImage imageNamed:@"person_icon.png"] withInset:0 withBorderWidth:15 withBorderColor:[UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f]]];
+        [self.imageHead setImage:[self ellipseImage:[UIImage imageNamed:@"person_icon.png"] withInset:0 withBorderWidth:1 withBorderColor:[UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f]]];
     }
         
 }
@@ -137,20 +129,6 @@ NSTimer * timer;
         [sheets showInView:self.view];
     }
     
-    //设置文字
-    if ([indexPath section] == 0 && [indexPath row] == 1)
-    {
-        UIAlertView * alter = [[UIAlertView alloc]initWithTitle:@"编辑" message:@"写点什么吧" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定",nil];
-        alter.alertViewStyle = UIAlertViewStylePlainTextInput;
-        
-        //拿到当前选中列表的文字
-        [alter textFieldAtIndex:0].text = self.textView.text;
-        
-        //显示文本框的x
-        [alter textFieldAtIndex:0].clearButtonMode =UITextFieldViewModeWhileEditing;
-        
-        [alter show];
-    }
     
     /*帮助
     if ([indexPath section] == 1 && [indexPath row] == 0)
@@ -168,12 +146,12 @@ NSTimer * timer;
     */
     
     //反馈，通过邮件
-    if ([indexPath section] == 1 && [indexPath row] == 1)
+    if ([indexPath section] == 2 && [indexPath row] == 2)
     {
         MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
         
         // 设置邮件主题
-        [mail setSubject:@"关于使用密记的反馈和建议"];
+        [mail setSubject:@"关于使用TheDays的反馈和建议"];
         
         // 设置邮件内容
         NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
@@ -200,7 +178,7 @@ NSTimer * timer;
     }
     
     //推荐好友
-    if ([indexPath section] == 1 && [indexPath row] == 2)
+    if ([indexPath section] == 2 &&[indexPath row] == 1)
     {
         UIActionSheet * sheet = [[UIActionSheet alloc]initWithTitle:@"选择推荐给好友的方式" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"短信",@"邮件", nil];
         
@@ -213,7 +191,7 @@ NSTimer * timer;
         
     }
     
-    /*关于密记
+    /*关于thedays
     if ([indexPath section] == 1 && [indexPath row] == 3)
     {
         
@@ -295,7 +273,7 @@ NSTimer * timer;
     {
         //默认头像
         
-        UIImage * newImage  = [self ellipseImage:[UIImage imageNamed:@"person_icon@2x.png"] withInset:0 withBorderWidth:15 withBorderColor:[UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f]];
+        UIImage * newImage  = [self ellipseImage:[UIImage imageNamed:@"person_icon@3x.png"] withInset:0 withBorderWidth:1 withBorderColor:[UIColor colorWithRed:77.0/255.0 green:164.0/255.0 blue:191.0/255.0 alpha:1.0f]];
         
         [self.imageHead setImage:newImage];
         
@@ -319,7 +297,7 @@ NSTimer * timer;
         MFMessageComposeViewController *mess = [[MFMessageComposeViewController alloc] init];
         
         // 设置短信内容
-        mess.body = @"亲，我现在使用密记，这款应用非常棒！记列表，写日记，备忘录，非常实用的功能，并且整个界面很简洁，你也快来下载试试用啊！包你惊喜！";
+        mess.body = @"短信内容...";
         
         // 设置收件人列表
         //mess.recipients = @[@"joonsheng.htc@icloud.com"];
@@ -338,9 +316,9 @@ NSTimer * timer;
         MFMailComposeViewController *mail = [[MFMailComposeViewController alloc] init];
         
         // 设置邮件主题
-        [mail setSubject:@"亲，快来下载密记试试啊！"];
+        [mail setSubject:@"邮件主题.."];
         // 设置邮件内容
-        [mail setMessageBody:@"亲，我现在使用密记，这款应用非常棒！记列表，写日记，备忘录，非常实用的功能，并且整个界面很简洁，你也快来下载试试用啊！包你惊喜！" isHTML:NO];
+        [mail setMessageBody:@"邮件内容.." isHTML:NO];
         
         // 设置代理
         mail.mailComposeDelegate = self;
